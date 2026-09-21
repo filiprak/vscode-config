@@ -1,0 +1,113 @@
+[
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "alt+d",
+        "command": "sftp.download.activeFile"
+    },
+    {
+        "key": "alt+s",
+        "command": "sftp.upload.activeFile"
+    },
+    {
+        "key": "down",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "enter",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "up",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "alt+oem_3",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "alt+a",
+        "command": "abracadabra.convertFunctionDeclarationToArrowFunction"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "notebook.addFindMatchToSelection",
+        "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-notebook.addFindMatchToSelection",
+        "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "f2",
+        "command": "-abracadabra.renameSymbol",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execInREPL",
+        "when": "config.python.REPL.sendToNativeREPL && editorTextFocus && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && editorLangId == 'python'"
+    }
+]

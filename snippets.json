@@ -1,0 +1,16 @@
+{
+    "[[_*en*Hello world_]]": {
+        "prefix": "ttt",
+        "body": [
+            "[[_*en*${0}_]]"
+        ],
+        "description": "Autocomplete double bracket italics with en tag"
+    },
+    "{{_*en*Hello world_}}": {
+        "prefix": "tt",
+        "body": [
+            "{{_*en*${0}_}}"
+        ],
+        "description": "Autocomplete double curly brace italics with en tag"
+    }
+}
